@@ -9,10 +9,11 @@ main {
     width: 794px;
     background-image: url(base\ paper.png);
     background-size: contain;
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Covered By Your Grace', cursive;
+    color: rgb(130, 130, 130);
     display: grid;
     grid-template-columns: 5.4rem repeat(3, 1fr);
-    grid-template-rows: 5.5rem repeat(4, 1fr);
+    grid-template-rows: 5.5rem 13.3rem repeat(3, 1fr);
 }
 
 /*  TOP MARGIN TITLE */
@@ -25,12 +26,13 @@ main {
     position: relative;
 }
 
-.top-line-wrapper h1 {
-    font-size: 3rem;
-    position: absolute;
-    top: 1.6rem;
-    left: 8rem;
-}
+    .top-line-wrapper h1 {
+        font-size: 4rem;
+        font-weight: 100;
+        position: absolute;
+        top: 1.5rem;
+        left: 8rem;
+    }
 
 /* CHARACTER DETAILS */
 /* CHARACTER DETAILS */
@@ -42,99 +44,226 @@ main {
     position: relative;
 }
 
-.character-wrapper .character-name {
-    position: absolute;
-    top: 1.5rem;
-    left: .3rem;
-    font-size: 1.5rem;
-}
+    .character-wrapper .character-name {
+        position: absolute;
+        top: 2.2rem;
+        left: .3rem;
+        font-size: 1.3rem;
+    }
 
-.character-wrapper .character-social-circle {
-    position: absolute;
-    top: 5.2rem;
-    left: .3rem;
-    font-size: 1.5rem;
-}
+    .character-wrapper .character-social-circle {
+        position: absolute;
+        top: 3.8rem;
+        left: .3rem;
+        font-size: 1.5rem;
+    }
 
-.character-wrapper .character-stereotype {
-    position: absolute;
-    top: 8.7rem;
-    left: .3rem;
-    font-size: 1.5rem;
-}
+    .character-wrapper .character-stereotype {
+        position: absolute;
+        top: 7.5rem;
+        left: .3rem;
+        font-size: 1.4rem;
+    }
 
-.character-wrapper .character-special-move {
-    position: absolute;
-    top: 12.4rem;
-    left: .3rem;
-    font-size: 1.4rem;
-}
+    .character-wrapper .character-special-move {
+        position: absolute;
+        top: 9.3rem;
+        left: .3rem;
+        font-size: 1.4rem;
+    }
 
 /* CHARACTER STATS */
 /* CHARACTER STATS */
 /* CHARACTER STATS */
 
 .stats-wrapper {
-    background-color: rgba(0, 128, 0, 0.178);
     grid-column: 2 / 4;
     grid-row: 3 / 4;
     position: relative;
 }
 
-.stats-wrapper .stats-brains {
-    position: absolute;
-    transform: rotate(-45deg);
-    font-size: 1.3rem;
-    top: .5rem;
-    text-decoration: underline;
-}
+    .column1 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
 
-.stats-wrapper .stats-dexterity {
-    position: absolute;
-    transform: rotate(-45deg);
-    font-size: 1.3rem;
-    top: 4.2rem;
-    text-decoration: underline;
-}
+        .stat-name {
+            display: inline-block;
+            transform: rotate(-35deg);
+            font-size: 1.5rem;
+            text-decoration: underline;
+            margin-bottom: 40px;
+        }
 
-.stats-wrapper .stats-influence {
-    position: absolute;
-    transform: rotate(-45deg);
-    font-size: 1.3rem;
-    top: 8.6rem;
-    left: -.5rem;
-    text-decoration: underline;
-}
+    .column2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute; 
+        left: 7rem;  
+        top: -.4rem;
+    }
 
-.stats-wrapper .stats-muscles {
-    position: absolute;
-    transform: rotate(-45deg);
-    font-size: 1.3rem;
-    top: 12.7rem;
-    left: -.2rem;
-    text-decoration: underline;
-}
+        .stat-circle1 {
+            border: dashed 2px rgb(200, 200, 200);
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            margin-bottom: 7px;
+        }
+
+    .column3 {
+        display: flex;
+        flex-direction: column;
+        position: absolute; 
+        left: 12.2rem;  
+        top: -.4rem;
+    }
+
+        .plus {
+            margin: 19px 0 20px 0;
+            font-size: 1.5rem;
+        }
+
+    .column4 {
+        display: flex;
+        flex-direction: column;
+        position: absolute; 
+        left: 14rem;  
+        top: -.4rem;
+    }
+
+        .stat-circle2 {
+            border: dashed 2px rgb(200, 200, 200);
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            margin-bottom: 7px;
+        }
+
+    .column5 {
+        display: flex;
+        flex-direction: column;
+        position: absolute; 
+        left: 19.2rem;  
+        top: -.4rem;
+    }
+
+        .equals {
+            margin: 19px 0 20px 0;
+            font-size: 1.5rem;
+        }
+
+    .column6 {
+        display: flex;
+        flex-direction: column;
+        position: absolute; 
+        left: 21.1rem;  
+        top: -.4rem;
+    }
+
+        .stat-total {
+            border: dashed 2px rgb(200, 200, 200);
+            height: 65px;
+            width: 90px;
+            margin-bottom: 7px;
+        }
 
 /* HEALTH AND SANITY */
 /* HEALTH AND SANITY */
 /* HEALTH AND SANITY */
 
 .health-wrapper {
-    background-color: rgba(173, 216, 230, 0.192);
     grid-column: 4 / 6;
     grid-row: 2 / 4;
     position: relative;
 }
+
+    .health-wrapper .health-initiative {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 1.9rem;
+        left: 1.3rem;
+    }
+
+        .health-wrapper .initiative-box {
+            border: dashed 2px rgb(200, 200, 200);
+            width: 90px;
+            height: 80px;
+            position: absolute;
+            left: -.9rem;
+        }
+
+    .health-wrapper .health-defense {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 1.9rem;
+        left: 9.4rem;
+    }
+
+        .health-wrapper .defense-box {
+            border: dashed 2px rgb(200, 200, 200);
+            width: 90px;
+            height: 80px;
+            position: absolute;
+            left: -1.2rem;
+        }
+
+    .health-wrapper .health-health {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 9.1rem;
+        left: 1.8rem;
+    }
+
+        .health-wrapper .health-box {
+            border: dashed 2px rgb(200, 200, 200);
+            width: 90px;
+            height: 315px;
+            position: absolute;
+            left: -1.3rem;
+        }
+
+    .health-wrapper .health-sanity {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 9.1rem;
+        left: 9.6rem;
+    }
+
+        .health-wrapper .sanity-box {
+            border: dashed 2px rgb(200, 200, 200);
+            width: 90px;
+            height: 315px;
+            position: absolute;
+            left: -1.4rem;
+        }
 
 /* ITEMS AND WEAPONS */
 /* ITEMS AND WEAPONS */
 /* ITEMS AND WEAPONS */
 
 .gear-wrapper {
-    background-color: rgba(144, 238, 144, 0.158);
     grid-column: 2 / 3;
     grid-row: 4 / 6;
     position: relative;
+}
+
+    .gear-title {
+        position: absolute;
+        font-size: 2rem;
+        top: 1.5rem;
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .split {
+        height: 470px;
+        border-right: 2px solid rgb(200, 200, 200);
+        position: absolute;
+        top: 4.5rem;
+        left: 15rem;
 }
 
 /* INVESTIGATION NOTES */
@@ -142,8 +271,16 @@ main {
 /* INVESTIGATION NOTES */
 
 .notes-wrapper {
-    background-color: rgba(0, 128, 128, 0.185);
     grid-column: 3 / 5;
     grid-row: 4 / 6;
     position: relative;
 }
+
+    .notes-title {
+        position: absolute;
+        font-size: 2rem;
+        top: 1.5rem;
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+    }
