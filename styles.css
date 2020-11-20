@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main { 
+    height: 1122px;
+    width: 794px;
+    background-image: url(base\ paper.png);
+    background-size: contain;
+    font-family: 'Cedarville Cursive', cursive;
+    display: grid;
+    grid-template-columns: 5.4rem repeat(3, 1fr);
+    grid-template-rows: 5.5rem repeat(4, 1fr);
+}
+
+/*  TOP MARGIN TITLE */
+/*  TOP MARGIN TITLE */
+/*  TOP MARGIN TITLE */
+
+.top-line-wrapper {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    position: relative;
+}
+
+.top-line-wrapper h1 {
+    font-size: 3rem;
+    position: absolute;
+    top: 1.6rem;
+    left: 8rem;
+}
+
+/* CHARACTER DETAILS */
+/* CHARACTER DETAILS */
+/* CHARACTER DETAILS */
+
+.character-wrapper {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    position: relative;
+}
+
+.character-wrapper .character-name {
+    position: absolute;
+    top: 1.5rem;
+    left: .3rem;
+    font-size: 1.5rem;
+}
+
+.character-wrapper .character-social-circle {
+    position: absolute;
+    top: 5.2rem;
+    left: .3rem;
+    font-size: 1.5rem;
+}
+
+.character-wrapper .character-stereotype {
+    position: absolute;
+    top: 8.7rem;
+    left: .3rem;
+    font-size: 1.5rem;
+}
+
+.character-wrapper .character-special-move {
+    position: absolute;
+    top: 12.4rem;
+    left: .3rem;
+    font-size: 1.4rem;
+}
+
+/* CHARACTER STATS */
+/* CHARACTER STATS */
+/* CHARACTER STATS */
+
+.stats-wrapper {
+    background-color: rgba(0, 128, 0, 0.178);
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    position: relative;
+}
+
+.stats-wrapper .stats-brains {
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 1.3rem;
+    top: .5rem;
+    text-decoration: underline;
+}
+
+.stats-wrapper .stats-dexterity {
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 1.3rem;
+    top: 4.2rem;
+    text-decoration: underline;
+}
+
+.stats-wrapper .stats-influence {
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 1.3rem;
+    top: 8.6rem;
+    left: -.5rem;
+    text-decoration: underline;
+}
+
+.stats-wrapper .stats-muscles {
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 1.3rem;
+    top: 12.7rem;
+    left: -.2rem;
+    text-decoration: underline;
+}
+
+/* HEALTH AND SANITY */
+/* HEALTH AND SANITY */
+/* HEALTH AND SANITY */
+
+.health-wrapper {
+    background-color: rgba(173, 216, 230, 0.192);
+    grid-column: 4 / 6;
+    grid-row: 2 / 4;
+    position: relative;
+}
+
+/* ITEMS AND WEAPONS */
+/* ITEMS AND WEAPONS */
+/* ITEMS AND WEAPONS */
+
+.gear-wrapper {
+    background-color: rgba(144, 238, 144, 0.158);
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+    position: relative;
+}
+
+/* INVESTIGATION NOTES */
+/* INVESTIGATION NOTES */
+/* INVESTIGATION NOTES */
+
+.notes-wrapper {
+    background-color: rgba(0, 128, 128, 0.185);
+    grid-column: 3 / 5;
+    grid-row: 4 / 6;
+    position: relative;
+}
